@@ -1,0 +1,18 @@
+
+<div class="cantainer my-5">
+  <h1 class="fw-bold text-center text-light" >Buscador de personas </h1>
+  <div class="container" >
+    <input  class="form-control" type="text" placeholder="Escribe el nombre de la persona " [(ngModel)]="eleccion"  >
+
+  </div>
+
+
+ <div>
+  <app-componente-hijo [eleccion]="eleccion"  ></app-componente-hijo>
+ </div>
+
+</div>
+
+
+
+<router-outlet></router-outlet>

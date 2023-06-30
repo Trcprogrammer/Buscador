@@ -1,0 +1,29 @@
+<div class="container" >
+
+
+<table class="table text-center " >
+  <thead>
+    <th>
+      Nombre
+    </th>
+    <th>
+    Apellido  
+    </th>
+    <th>
+      trabajos
+    </th>
+
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let informacion of datos" >
+      <tr *ngIf=" eleccion == informacion.nombre  ||  eleccion == informacion.apellido  ||  eleccion == informacion.trabajos "   >
+
+        <td>{{informacion.nombre}}</td>
+        <td>{{informacion.apellido}}</td>
+        <td>{{informacion.trabajos}}</td>
+      </tr>
+    </ng-container>
+   
+  </tbody>
+</table>
+</div>
